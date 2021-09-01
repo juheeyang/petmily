@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/promotePostToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.98"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="제목"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/promoteUserImg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="20dp" />
+
+                <TextView
+                    android:id="@+id/textViewNickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="닉네임"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textViewLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="지역"
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:textColor="#000000"/>
+
+
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="품종"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/textViewAdoption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="입양여부"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="#E0F8F1" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="특이사항"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewMemo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="특별한 사항이 있으면 적어주세요"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

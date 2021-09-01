@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/review_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainColor">
+
+            <TextView
+                android:id="@+id/titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="후기"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+            <Button
+                android:id="@+id/btnCategorize"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button1"
+                android:text="전체 글"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView_main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#007D909C"
+            android:padding="5dp"
+            android:scrollbars="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/mainColor"
+        android:src="@drawable/ic_add"
+        app:borderWidth="0dp"/>
+
+
+</FrameLayout>
